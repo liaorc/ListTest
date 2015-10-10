@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_item_qr_scan"
+          android:icon="@drawable/sort_button240x240"
+          android:title="选项界面"
+          android:showAsAction="ifRoom"
+          android:actionLayout="@layout/action_view"
+        >
+    </item>
+</menu>
