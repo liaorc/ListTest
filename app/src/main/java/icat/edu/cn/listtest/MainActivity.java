@@ -149,6 +149,7 @@ public class MainActivity extends Activity {
         mLinearLayout = (FrameLayout)findViewById(R.id.nothing_layout);
         mLinearLayout.setFocusable(true);
         mLinearLayout.setClickable(true);
+        mLinearLayout.setVisibility(View.GONE);
 
         //mLinearLayout.startAnimation(mHide);
         mLinearLayout.setOnTouchListener(new View.OnTouchListener() {
@@ -225,7 +226,6 @@ public class MainActivity extends Activity {
     @Override
     protected void onStart() {
         super.onStart();
-        mLinearLayout.setVisibility(View.GONE);
     }
 
     private void toggleMenu() {
@@ -454,7 +454,7 @@ public class MainActivity extends Activity {
     protected void onResume() {
         super.onResume();
         mMapView.onResume();
-        mLocationClient.requestLocation();
+        //mLocationClient.requestLocation();
     }
     @Override
     protected void onPause() {
